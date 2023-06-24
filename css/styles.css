@@ -1161,21 +1161,27 @@ img {
 }
 
 .portfolio-thumb-text {
-  position: absolute;
-  top: 0;
+  opacity: 0;
+}
+@media screen and (min-width: 1158px) {
+  .portfolio-thumb-text {
+    position: absolute;
+    opacity: 1;
+    top: 0;
 
-  transform: translateY(100%);
-  transition: transform var(--time) var(--timing-function);
+    transform: translateY(100%);
+    transition: transform var(--time) var(--timing-function);
 
-  padding: 40px 32px;
-  height: 100%;
-  width: 100%;
+    padding: 40px 32px;
+    height: 100%;
+    width: 100%;
 
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--color-btn);
-  background-color: var(--color-text-button);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-btn);
+    background-color: var(--color-text-button);
+  }
 }
 
 .portfolio-link:is(:hover, :focus) .portfolio-thumb,
