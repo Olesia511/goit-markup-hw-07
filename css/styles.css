@@ -1024,6 +1024,11 @@ img {
 }
 
 /***--------PORTFOLIO---------------------**/
+.portfolio-section {
+  max-width: 428px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .filters-list {
   display: flex;
@@ -1134,6 +1139,8 @@ img {
 .portfolio-link {
   transition: box-shadow var(--time) var(--timing-function);
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .portfolio-link:is(:hover, :focus) {
@@ -1211,6 +1218,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-text);
 }
+
 picture > img {
   height: 100%;
 }
@@ -1225,6 +1233,7 @@ picture > img {
   top: 0;
   left: 0;
   opacity: 1;
+  overflow-y: scroll;
 
   transition: opacity var(--time) var(--timing-function),
     visibility var(--time) var(--timing-function);
@@ -1472,6 +1481,7 @@ picture > img {
 
 .menu-container {
   position: fixed;
+  overflow-y: scroll;
 
   top: 0;
   left: 0;
