@@ -1202,10 +1202,16 @@ img {
   margin-bottom: 8px;
 
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-text-h);
+}
+
+@media screen and (min-width: 321px) {
+  .portfolio-title {
+    font-size: 20px;
+  }
 }
 
 .portfolio-text {
